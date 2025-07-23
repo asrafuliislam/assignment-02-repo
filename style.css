@@ -10,11 +10,11 @@
 
 
 .font-noto-serif {
-  font-family: "Noto Serif", serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  font-variation-settings:"width" 100;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "width" 100;
 }
 
 
@@ -33,7 +33,7 @@
 }
 
 
-.font-orange{
+.font-orange {
     color: #E95A08;
 }
 
@@ -41,7 +41,8 @@
 /* nav section style */
 
 .navbar,
-.banner {
+.banner,
+section {
     max-width: 1170px;
     margin: 0 auto;
 }
@@ -51,10 +52,9 @@
     align-items: center;
 }
 
-.nav{
+.nav {
     margin-right: 30px;
 }
-
 
 .logo {
     width: 135px;
@@ -67,7 +67,7 @@
     color: #252432;
 }
 
-#cart{
+#cart {
     padding-left: 5px;
 }
 
@@ -88,21 +88,72 @@
 
 /* banner section style */
 
-.banner{
-    align-items:flex-end;
+.banner {
+    align-items: flex-end;
     margin-top: 220px;
 }
 
-.banner-title{
-    font-weight:700;
-    font-size:4.11rem;
+.banner-title {
+    font-weight: 700;
+    font-size: 4.11rem;
     margin: 0;
 }
 
-.banner-img img{
-    max-width:100%;
+.banner-img img {
+    width: 100%;
 }
 
+/* Plants Section style */
+
+.plant-section {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.plant-title {
+    font-weight: 700;
+    font-size: 3.25rem;
+    margin: 0px;
+}
+.plant-discription{
+    font-size: 1.75rem;
+    margin: 10px 50px;
+}
+
+
+.flower-name {
+    font-weight: 400;
+    font-size: 1.50rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.flower-price {
+    font-weight: 600;
+    font-size: 1.50rem;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #E95A08;
+
+    border: none;
+    width: 176px;
+    height: 50px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.shop-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 50px;
+    gap: 20px;
+}
 
 /* responsive media query */
 
@@ -110,10 +161,15 @@
     .nav-links {
         display: none;
     }
-    .banner{
 
-        flex-direction:column-reverse;
+    .banner {
+        flex-direction: column-reverse;
     }
 
-}
+    .shop-card {
+        grid-template-columns: repeat(2, 1fr);
 
+    }
+    
+
+}
