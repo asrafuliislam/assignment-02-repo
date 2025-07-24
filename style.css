@@ -88,9 +88,14 @@ section {
 /* banner section style */
 
 .banner {
+    justify-content: space-between;
     align-items: flex-end;
     margin-top: 150px;
     width: 100%;
+}
+
+.banner-info{
+
 }
 
 .banner-title {
